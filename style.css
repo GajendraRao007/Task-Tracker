@@ -103,7 +103,8 @@ span{
 .delete-button:hover{
     background-color: rgb(182, 5, 5);
     color: white;
-    transition: ;
+    transition: ease-in-out .5s;
+    cursor: pointer;
 }
 
 .task{
