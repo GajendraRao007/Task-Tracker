@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-WebApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>To Do App</h1>
+    </div>
+
+    <div class="main">
+    <div class="form">
+        <label for="">Task Name</label> <br>
+        <input class="text" id="text" placeholder="Enter here something" type="text"> <br>
+        <label for="">Task Description</label> <br>
+        <textarea placeholder="enter here" class="description" name="" id="description" cols="30" rows="10"></textarea>
+        <button type="button" onclick="addbtn()" class="addbtn">Add</button>
+    </div>
+    <div class="list">
+        <span>Task Name</span>
+            <span>Task Description</span>
+            <span>Delete</span> <br>
+            <div class="display" id="display"></div>
+    </div>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
