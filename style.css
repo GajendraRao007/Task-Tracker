@@ -71,9 +71,8 @@ label{
 
 span{
     font-size: 20px;
-    padding-top: 30px;
-    color: rgb(18, 131, 206);
-    font-weight: 800;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
     margin-right:100px ;
     
 }
@@ -87,22 +86,34 @@ span{
     border-radius: 5px;
 }
 
-.display{
-    background-color: rgb(255, 251, 0);
-    color: black;
-    width: 400px;
-    height: 100px;
-    width: 100%;
-    margin-top: 50px;
-    font-size: 20px;
+
+.delete-button{
+    position: relative;
+    right: 100px;
+    top: -30px;
+    margin-left: 730px;
+    background-color:  rgb(18, 131, 206);
+    color:  rgb(255, 255, 255);
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
 }
 
-.deletebtn{
-width: 80px;
-height: 40px;
-background-color: red;
-border: none;
-color: white;
-border-radius: 10%;
+.delete-button:hover{
+    background-color: rgb(182, 5, 5);
+    color: white;
+    transition: ;
+}
 
+.task{
+    background-color: rgb(18, 131, 206);
+    color: rgb(255, 255, 255);
+    width: 600px;
+    height: 90px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
 }
