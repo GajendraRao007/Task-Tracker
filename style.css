@@ -8,7 +8,6 @@
 }
 
 
-
 .header{
     width: 100%;
     height: 60px;
@@ -25,7 +24,7 @@ h1{
 
 .main{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 input{
@@ -54,6 +53,8 @@ textarea{
     text-align: left;
     background-color: white;
     border-radius: 10px;
+    box-shadow:20px 20px 50px 10px rgb(104, 104, 104);
+    
 }
 
 
@@ -73,7 +74,8 @@ span{
     font-size: 20px;
     color: rgb(255, 255, 255);
     font-weight: 400;
-    margin-right:100px ;
+    margin-right:100px;
+    word-wrap: break-word;
     
 }
 
@@ -118,3 +120,8 @@ span{
     padding-top: 30px;
     border-radius: 10px;
 }
+
+::placeholder{
+    font-size: 15px;
+}
+

@@ -3,29 +3,23 @@ function addbtn() {
     let description = document.getElementById('description').value;
 
     if (title && description) {
+        let taskElement = document.getElementById('display');
 
-        let taskElement = document.createElement("div");
-        taskElement.className = "task";
-        taskElement.innerHTML ="<span>Title: " + title + "</span>" + "<br><span>Description: " + description + "</span>";
-
-    
-       let delbtn = document.createElement('Button');
-       delbtn.className = "delete-button";
-       delbtn.innerText = "Delete";
-       delbtn.addEventListener('click', function(){
-               taskElement.remove()
-       })
-          
-
-        taskElement.appendChild(delbtn);
-
-        document.getElementById('display').appendChild(taskElement);
-
-        // console.log(`Title: ${title}, Description: ${description}`);
+        taskElement.innerHTML += `
+            <div class="task">
+                <span>Title: ${title}</span><br>
+                <span>Description: ${description}</span>
+                <button class="delete-button" onclick="removeTask(this.parentNode)">Delete</button>
+            </div>
+        `;
 
         document.getElementById('text').value = '';
         document.getElementById('description').value = '';
     } else {
         alert('Please fill out all fields');
     }
+}
+
+function removeTask(task) {
+    task.remove();
 }
